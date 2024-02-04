@@ -15,7 +15,7 @@ const deleteButton = document.getElementById('deleteButton');
 document.addEventListener("DOMContentLoaded", () => {
     addButton.addEventListener("click", addTask);
     todoInput.addEventListener("keydown", (event) => {
-        if (event.key === "enter") {
+        if (event.key === "Enter") {
             event.preventDefault();
             addTask();
         }
@@ -103,4 +103,3 @@ function deleteAllTasks() {
 function saveToLocalStorage() {
     localStorage.setItem("todo", JSON.stringify(todo));
 }
-
